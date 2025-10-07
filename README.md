@@ -18,6 +18,55 @@
 
 ## English
 
+## 📊 Graph Analytics Architecture
+
+```mermaid
+graph TB
+    A[Graph Data] --> B[Graph Construction]
+    B --> C{Analysis Type}
+    C -->|Centrality| D[PageRank/Betweenness]
+    C -->|Community| E[Louvain/Label Prop]
+    C -->|Link Prediction| F[Common Neighbors/Adamic-Adar]
+    C -->|GNN| G[Graph Neural Networks]
+    D --> H[Node Importance]
+    E --> I[Community Structure]
+    F --> J[Predicted Links]
+    G --> K[Node Embeddings]
+    H --> L[Visualization]
+    I --> L
+    J --> L
+    K --> L
+    L --> M[Interactive Dashboard]
+    
+    style A fill:#e1f5ff
+    style M fill:#c8e6c9
+    style C fill:#fff9c4
+```
+
+## 🔄 Analysis Pipeline
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Analyzer
+    participant NetworkX
+    participant Neo4j
+    participant Visualizer
+    
+    User->>Analyzer: Load graph
+    Analyzer->>NetworkX: Build graph structure
+    NetworkX-->>Analyzer: Graph object
+    Analyzer->>NetworkX: Calculate centrality
+    NetworkX-->>Analyzer: Centrality scores
+    Analyzer->>NetworkX: Detect communities
+    NetworkX-->>Analyzer: Community assignments
+    Analyzer->>Neo4j: Store graph (optional)
+    Analyzer->>Visualizer: Generate visualization
+    Visualizer-->>User: Interactive graph
+```
+
+
+
 ### 📋 Overview
 
 Advanced graph analytics platform implementing network analysis algorithms, community detection, link prediction, centrality measures, and graph neural networks (GNNs). Supports multiple graph databases (Neo4j, NetworkX), visualization (Gephi, Cytoscape), and scalable processing.
