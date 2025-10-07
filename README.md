@@ -45,6 +45,53 @@ graph TB
 
 ## 🔄 Analysis Pipeline
 
+### 📊 Network Visualization
+
+Example network analysis using the Karate Club dataset:
+
+![Network Visualization](assets/network_visualization.png)
+
+#### Visualization Features
+
+**Node Characteristics:**
+- **Size**: Proportional to betweenness centrality (larger = more important)
+- **Color**: Community assignment (4 communities detected)
+- **Labels**: Node identifiers for reference
+
+**Network Properties:**
+- **Nodes**: 34 members
+- **Edges**: 78 relationships
+- **Communities**: 4 distinct groups (Louvain algorithm)
+- **Modularity**: 0.42 (strong community structure)
+
+**Key Insights:**
+- **Central nodes** (largest): Act as bridges between communities
+- **Color clusters**: Tightly connected groups with similar characteristics
+- **Sparse connections**: Between-community links are fewer
+- **Hub-and-spoke patterns**: Some nodes are highly connected
+
+#### Analysis Capabilities
+
+The framework provides comprehensive network analysis:
+
+| Analysis Type | Metrics | Use Cases |
+|---------------|---------|-----------|
+| **Centrality** | Degree, Betweenness, Closeness, PageRank | Identify influential nodes |
+| **Community** | Louvain, Label Propagation, Girvan-Newman | Find clusters |
+| **Link Prediction** | Common Neighbors, Adamic-Adar, Jaccard | Recommend connections |
+| **Path Analysis** | Shortest paths, Diameter, Average path length | Network efficiency |
+
+#### Additional Visualizations
+
+The analysis suite generates:
+- **Degree Distribution**: Network topology characterization
+- **Community Heatmap**: Inter/intra-community connections
+- **Centrality Comparison**: Multiple centrality measures
+- **Evolution Over Time**: For temporal networks
+
+All visualizations are interactive (using Plotly) and saved to `reports/figures/`.
+
+
 ```mermaid
 sequenceDiagram
     participant User
