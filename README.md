@@ -2,11 +2,6 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
-![NetworkX](https://img.shields.io/badge/NetworkX-3.0+-FF6B6B.svg)
-![Neo4j](https://img.shields.io/badge/Neo4j-5.0+-008CC1.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 **Comprehensive graph analytics with network algorithms, community detection, and graph neural networks**
 
@@ -628,13 +623,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📊 Project Statistics
 
-![GitHub stars](https://img.shields.io/github/stars/galafis/graph-analytics-network-analysis?style=social)
-![GitHub forks](https://img.shields.io/github/forks/galafis/graph-analytics-network-analysis?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/galafis/graph-analytics-network-analysis?style=social)
-![GitHub issues](https://img.shields.io/github/issues/galafis/graph-analytics-network-analysis)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/galafis/graph-analytics-network-analysis)
-![GitHub last commit](https://img.shields.io/github/last-commit/galafis/graph-analytics-network-analysis)
-![GitHub code size](https://img.shields.io/github/languages/code-size/galafis/graph-analytics-network-analysis)
 
 ## 🚀 Roadmap
 
